@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ *  Defines plugin for Nigeria address.
+ */
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function address_field_nigeria_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'addressfield') {
+    return 'plugins/' . $plugin;
+  }
+}
