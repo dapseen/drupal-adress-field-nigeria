@@ -152,7 +152,7 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
         'Central Business District' => t('Central Business District'),
         'Garki Area 1' => t('Garki Area 1'),
         'Garki Area 2' => t('Garki Area 2'),
-        'Garki Area 3' => t('Garki Area 3'), 
+        'Garki Area 3' => t('Garki Area 3'),
         'Garki Area 7' => t('Garki Area 7'),
         'Garki Area 8' => t('Garki Area 8'),
         'Garki Area 10' => t('Garki Area 10'),
@@ -181,7 +181,7 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
         'Diobu mile 2' => t('Diobu mile 2'),
         'Diobu mile 3' => t('Diobu mile 3'),
         'Diobu mile 4' => t('Diobu mile 4'),
-        'D-line' => t('D-line'), 
+        'D-line' => t('D-line'),
         'Eagle island rumueme/Oroakwo' => t('Eagle island rumueme/Oroakwo'),
         'Igwa layout' => t('Igwa layout'),
         'Ikwerre' => t('Ikwerre'),
@@ -199,7 +199,6 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
         'Trans  Amadi' => t('Trans  Amadi'),
       );
     }
-    
   }
   // Format render
   if ($context['mode'] == 'render') {
