@@ -199,6 +199,8 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
         'Trans  Amadi' => t('Trans  Amadi'),
       );
     }
+
+    // Other states to follow
   }
   // Format render
   if ($context['mode'] == 'render') {
@@ -207,7 +209,7 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
     $format['locality_block']['postal_code']['#weight'] = 3;
     $format['locality_block']['postal_code']['#prefix'] = ' ';
   }
-  // Check ajax form in Viet Nam
+  // Check ajax form
   if ($context['mode'] == 'form' && $address['country'] == 'NG') {
     $format['locality_block']['administrative_area']['#ajax'] = array(
       'callback' => 'addressfield_standard_widget_refresh',
