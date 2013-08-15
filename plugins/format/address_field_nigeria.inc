@@ -21,7 +21,7 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
   if ($address['country'] == 'NG') {
     // unset($format['locality_block']['administrative_area']);
     $format['locality_block']['administrative_area']['#options'] = array(
-      ''   => t('--'),
+      ''   => t('--Choose a state--'),
       'Abia' => t('Abia'),
       'Adamawa' => t('Adamawa'),
       'Akwa Ibom' => t('Akwa Ibom'),
@@ -75,10 +75,10 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
       '#weight' => 3,
     );
 
-    // Default district for Lagos state
+    // Default district for Lagos state.
     if ($address['administrative_area'] == 'Lagos') {
       $format['locality_block']['locality']['#options'] = array(
-        '' => t(''),
+        '' => t('-Choose an area-'),
         'Agbado' => t('Agbado'),
         'Agboyi' => t('Agboyi'),
         'Agege' => t('Agege'),
@@ -144,10 +144,10 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
       );
     }
 
-    // Default district for FCT (Abuja)
+    // Default district for FCT (Abuja).
     if ($address['administrative_area'] == 'Abuja') {
       $format['locality_block']['locality']['#options'] = array(
-        '' => t(''),
+        '' => t('-Choose an area-'),
         'Asokoro' => t('Asokoro'),
         'Central Business District' => t('Central Business District'),
         'Garki Area 1' => t('Garki Area 1'),
@@ -170,10 +170,10 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
       );
     }
 
-    // Default district for FCT (Abuja)
+    // Default district for FCT (Abuja).
     if ($address['administrative_area'] == 'Rivers') {
       $format['locality_block']['locality']['#options'] = array(
-        '' => t(''),
+        '' => t('-Choose an area-'),
         'Alo-mini' => t('Alo-mini'),
         'Amadi flat' => t('Amadi flat'),
         'Bori kiri' => t('Bori kiri'),
@@ -200,16 +200,16 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
       );
     }
 
-    // Other states to follow
+    // Other states to follow.
   }
-  // Format render
+  // Format render.
   if ($context['mode'] == 'render') {
     $format['locality_block']['administrative_area']['#weight'] = 2;
     $format['locality_block']['locality']['#weight'] = 1;
     $format['locality_block']['postal_code']['#weight'] = 3;
     $format['locality_block']['postal_code']['#prefix'] = ' ';
   }
-  // Check ajax form
+  // Check ajax form.
   if ($context['mode'] == 'form' && $address['country'] == 'NG') {
     $format['locality_block']['administrative_area']['#ajax'] = array(
       'callback' => 'addressfield_standard_widget_refresh',
@@ -218,4 +218,3 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
     );
   }
 }
-
