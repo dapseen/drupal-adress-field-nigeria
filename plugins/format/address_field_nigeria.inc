@@ -7,7 +7,7 @@
 
 $plugin = array(
   'title' => t('Address form (specific for Nigeria)'),
-  'format callback' => 'addressfield_ng_format_address_generate',
+  'format callback' => 'address_field_nigeria_format_address_generate',
   'type' => 'address',
   'weight' => -100,
 );
