@@ -19,7 +19,6 @@ $plugin = array(
  */
 function address_field_nigeria_format_address_generate(&$format, $address, $context = array()) {
   if ($address['country'] == 'NG') {
-    // unset($format['locality_block']['administrative_area']);
     $format['locality_block']['administrative_area']['#options'] = array(
       ''   => t('--Choose a state--'),
       'Abia' => t('Abia'),
@@ -60,12 +59,14 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
       'Yobe' => t('Yobe'),
       'Zamfara' => t('Zamfara'),
     );
+    $format['locality_block']['administrative_area']['#weight'] = 1;
     $format['locality_block']['locality'] = array(
       '#title' => t('Area'),
       '#size' => 30,
       '#required' => TRUE,
       '#prefix' => ' ',
       '#attributes' => array('class' => array('locality')),
+      '#weight' => 1,
     );
     $format['locality_block']['postal_code'] = array(
       '#title' => t('Postal Code'),
@@ -204,8 +205,8 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
   }
   // Format render.
   if ($context['mode'] == 'render') {
-    $format['locality_block']['administrative_area']['#weight'] = 2;
-    $format['locality_block']['locality']['#weight'] = 1;
+    $format['locality_block']['administrative_area']['#weight'] = 1;
+    $format['locality_block']['locality']['#weight'] = 2;
     $format['locality_block']['postal_code']['#weight'] = 3;
     $format['locality_block']['postal_code']['#prefix'] = ' ';
   }
