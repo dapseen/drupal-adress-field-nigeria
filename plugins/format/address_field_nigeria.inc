@@ -171,7 +171,7 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
       );
     }
 
-    // Default district for FCT (Abuja).
+    // Default district for Rivers).
     if ($address['administrative_area'] == 'Rivers') {
       $format['locality_block']['locality']['#options'] = array(
         '' => t('-Choose an area-'),
@@ -198,6 +198,113 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
         'Rumuokwuta' => t('Rumuokwuta'),
         'Town' => t('Town'),
         'Trans  Amadi' => t('Trans  Amadi'),
+      );
+    }
+    // Default district for Oyo.
+    if ($address['administrative_area'] == 'Oyo') {
+      $format['locality_block']['locality']['#options'] = array(
+        '' => t('-Choose an area-'),
+        'Afijio' => t('Afijio'),
+        'Akinyele' => t('Akinyele'),
+        'Atiba' => t('Atiba'),
+        'Atisbo' => t('Atisbo'),
+        'Egbeda' => t('Egbeda'),
+        'Ibadan' => t('Ibadan'),
+        'Ido' => t('Ido'),
+        'Irepo' => t('Irepo'),
+        'Iseyin' => t('Iseyin'),
+        'Itesiwaju' => t('Itesiwaju'),
+        'Iwajowa' => t('Iwajowa'),
+        'kajola' => t('Kajola'),
+        'Lagelu' => t('Lagelu'),
+        'Ogbomoso' => t('Ogbomoso'),
+        'Oyo' => t('Oyo'),
+        'Surulere' => t('Surulere'),
+      );
+    }
+    if ($address['administrative_area'] == 'Ogun') {
+      $format['locality_block']['locality']['#options'] = array(
+        '' => t('-Choose an area-'),
+        'Abeokuta' => t('Abeokuta'),
+        'Ada odo' => t('Ada odo'),
+        'Agbara-igbesa' => t('Agbara-igbesa'),
+        'Arepo' => t('Arepo'),
+        'Ewekoro' => t('Ewekoro'),
+        'Ifo' => t('Ifo'),
+        'Ijebu' => t('Ijebu'),
+        'Obafemi Owode' => t('Obafemi Owode'),
+        'Odogbolu' => t('Odogbolu'),
+        'Ogun Waterside' => t('Ogun Waterside'),
+        'Remo North' => t('Remo North'),
+        'Sagamu' => t('Sagamu'),
+        'Yewa' => t('Yewa'),
+      );
+    }
+    if ($address['administrative_area'] == 'Anambra') {
+      $format['locality_block']['locality']['#options'] = array(
+        '' => t('-Choose an area-'),
+        'Aguata' => t('Aguata'),
+        'Anambra East' => t('Anambra East'),
+        'Anambra West' => t('Anambra West'),
+        'Anaocha' => t('Anaocha'),
+        'Awka North' => t('Awka North'),
+        'Awka South' => t('Awka South'),
+        'Ayamelum' => t('Ayamelum'),
+        'Dunukofia' => t('Dunukofia'),
+        'Ekwusigo' => t('Ekwusigo'),
+        'Idemili North' => t('Idemili North'),
+        'Idemili South' => t('Idemili North'),
+        'Ihiala' => t('Ihiala'),
+        'Njikoka' => t('Njikoka'),
+        'Nnewi North' => t('Nnewi North'),
+        'Nnewi South' => t('Nnewi South'),
+        'Ogbaru' => t('Ogbaru'),
+        'Onitsha North' => t('Onitsha North'),
+        'Orumba North' => t('Orumba North'),
+        'Orumba South' => t('Orumba South'),
+        'Oyi' => t('Oyi'),
+      );
+    }
+    if ($address['administrative_area'] == 'Enugu') {
+      $format['locality_block']['locality']['#options'] = array(
+        '' => t('-Choose an area-'),
+        'Aninri' => t('Aninri'),
+        'Enugu East' => t('Enugu East'),
+        'Enugu North' => t('Enugu North'),
+        'Enugu South' => t('Enugu South'),
+        'Ezeagu' => t('Ezeagu'),
+        'Igbo-Ekiti' => t('Igbo-Ekiti'),
+        'Igbo-Eze South' => t('Igbo-Eze South'),
+        'IgboEze North' => t('IgboEze North'),
+        'Isi-Uzo' => t('Isi-Uzo'),
+        'Nkanu' => t('Nkanu'),
+        'Nkanu East' => t('Nkanu East'),
+        'Nsukka' => t('Nsukka'),
+        'Oji-River' => t('Oji-River'),
+        'Udenu' => t('Udenu'),
+        'Udi Agwu' => t('Udi Agwu'),
+        'Uzo-Uwani' => t('Uzo-Uwani'),
+      );
+    }
+    if ($address['administrative_area'] == 'Akwa Ibom') {
+      $format['locality_block']['locality']['#options'] = array(
+        '' => t('-Choose an area-'),
+        'Abak' => t('Abak'),
+        'Eastern Obolo' => t('Eastern Obolo'),
+        'Eket' => t('Eket'),
+        'Enugu South' => t('Enugu South'),
+        'Ezeagu' => t('Ezeagu'),
+        'Igbo-Ekiti' => t('Igbo-Ekiti'),
+        'Igbo-Eze South' => t('Igbo-Eze South'),
+        'IgboEze North' => t('IgboEze North'),
+        'Isi-Uzo' => t('Isi-Uzo'),
+        'Nkanu' => t('Nkanu'),
+        'Nkanu East' => t('Nkanu East'),
+        'Nsukka' => t('Nsukka'),
+        'Oji-River' => t('Oji-River'),
+        'Udenu' => t('Udenu'),
+        'Udi Agwu' => t('Udi Agwu'),
+        'Uzo-Uwani' => t('Uzo-Uwani'),
       );
     }
 
