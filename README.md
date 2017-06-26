@@ -1,4 +1,4 @@
-#Address Field Nigeria
+# Address Field Nigeria
 
 This module is a plugin for Addressfield module. 
 It provides a user friendly Nigerian address form.
@@ -9,7 +9,7 @@ Currently only locality options for  7 states
 Administrative area is provided. Other states coming soon. 
 7 down 29 more to go!
 
-##Author
+## Author
 **Tony Ogbonna**
 
 I'm just a passionate maintainer, with :heart: by  @dapseen
