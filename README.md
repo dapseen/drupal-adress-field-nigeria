@@ -10,6 +10,6 @@ Administrative area is provided. Other states coming soon.
 7 down 29 more to go!
 
 ## Author
-**Tony Ogbonna**
+**Tony Ogbonna** @togbonna
 
 I'm just a passionate maintainer, with :heart: by  @dapseen
