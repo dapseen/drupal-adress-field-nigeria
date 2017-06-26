@@ -1,10 +1,15 @@
-Address Field Nigeria
+#Address Field Nigeria
 
 This module is a plugin for Addressfield module. 
 It provides a user friendly Nigerian address form.
 
 To use download and install, then use your addressfield fields as usual.
 
-Currently only locality options for the Lagos, FCT and Rivers 
+Currently only locality options for  7 states
 Administrative area is provided. Other states coming soon. 
-Three down 29 more to go!
+7 down 29 more to go!
+
+##Author
+**Tony Ogbonna**
+
+I'm just a passionate maintainer, with :heart: by  @dapseen
