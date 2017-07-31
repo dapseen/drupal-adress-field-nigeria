@@ -12,4 +12,4 @@ Administrative area is provided. Other states coming soon.
 ## Author
 **Tony Ogbonna** @togbonna
 
-I'm just a passionate maintainer, with :heart: by  @dapseen
+I'm just a passionate maintainer, with :heart: by  @dapseen (dapseen[at]gmail.com)

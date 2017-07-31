@@ -408,6 +408,155 @@ function address_field_nigeria_format_address_generate(&$format, $address, $cont
         'Yenegoa' => t('Yenegoa'),
       );
     }
+    if ($address['administrative_area'] == 'Benue') {
+      $format['locality_block']['locality']['#options'] = array(
+          '' => t('-Choose an area-'),
+          'Ado' => t('Ado'),
+          'Agatu' => t('Agatu'),
+          'Apa' => t('Apa'),
+          'Buruku' => t('Buruku'),
+          'Gboko' => t('Gboko'),
+          'Gwer East' => t('Gwer East'),
+          'Gwer West' => t('Gwer West'),
+          'Kastina-Ala' => t('Kastina-Ala'),
+          'Konshisha' => t('Konshisha'),
+          'Kwande' => t('Kwande'),
+          'Logo' => t('Logo'),
+          'Makurdi' => t('Makurdi'),
+          'Obi' => t('Obi'),
+          'Ogbadibo' => t('Ogbadibo'),
+          'Ohimini' => t('Ohimini'),
+          'Oju' => t('Oju'),
+          'Okpokwu' => t('Okpokwu'),
+          'Oturkpo' => t('Oturkpo'),
+          'Tarka' => t('Tarka'),
+          'Ukum' => t('Ukum'),
+          'Ushongo' => t('Ushongo'),
+          'Vandeikya' => t('Vandeikya'),
+      );
+    }
+    if ($address['administrative_area'] == 'Borno') {
+      $format['locality_block']['locality']['#options'] = array(
+          '' => t('-Choose an area-'),
+          'Abadam' => t('Abadam'),
+          'Askira/Uba' => t('Askira/Uba'),
+          'Bama' => t('Bama'),
+          'Bayo' => t('Bayo'),
+          'Chibok' => t('Chibok'),
+          'Damboa' => t('Damboa'),
+          'Dikwa' => t('Dikwa'),
+          'Gubio' => t('Gubio'),
+          'Guzamala' => t('Guzamala'),
+          'Gwoza' => t('Gwoza'),
+          'Hawul' => t('Hawul'),
+          'Jere' => t('Jere'),
+          'Kaga' => t('Kaga'),
+          'Kala/Balge' => t('Kala/Balge'),
+          'Konduga' => t('Konduga'),
+          'Kukuwa' => t('Kukuwa'),
+          'Kwaya Kusar' => t('Kwaya Kusar'),
+          'Mafa' => t('Oturkpo'),
+          'Magumeri' => t('Magumeri'),
+          'Maiduguri' => t('Maiduguri'),
+          'Marte' => t('Marte'),
+          'Mobbar' => t('Mobbar'),
+          'Monguno' => t('Monguno'),
+          'Ngala' => t('Ngala'),
+          'Nganzai' => t('Nganzai'),
+          'Shani' => t('Shani'),
+      );
+    }
+
+    if ($address['administrative_area'] == 'Cross River') {
+      $format['locality_block']['locality']['#options'] = array(
+          '' => t('-Choose an area-'),
+          'Abi' => t('Abi'),
+          'Akamkpa' => t('Akamkpa'),
+          'Akpabuyo' => t('Akpbuyo'),
+          'Bakassi' => t('Bakassi'),
+          'Bekwara' => t('Bekwara'),
+          'Biase' => t('Biase'),
+          'Boki' => t('Boki'),
+          'Calabar Municipality' => t('Calabar Municipality'),
+          'Calabat south' => t('Calabar South'),
+          'Etung' => t('Etung'),
+          'Ikom' => t('Ikom'),
+          'Obanliku' => t('Obanliku'),
+          'Obudu' => t('Obudu'),
+          'Odubra' => t('Odubra'),
+          'Odukpani' => t('Odukpani'),
+          'Ogoja' => t('Ogoja'),
+          'Yala' => t('Yala'),
+          'Yarkur' => t('Yarkur'),
+      );
+    }
+    if ($address['administrative_area'] == 'Delta') {
+      $format['locality_block']['locality']['#options'] = array(
+          '' => t('-Choose an area-'),
+          'Aniocha' => t('Aniocha'),
+          'Aniocha South' => t('Aniocha South'),
+          'Asaba' => t('Asaba'),
+          'Bomadi' => t('Bomadi'),
+          'Burutu' => t('Burutu'),
+          'Ethiope East' => t('Ethiope East'),
+          'Ethiope West' => t('Ethiope West'),
+          'Ika North-East' => t('Ika North-East'),
+          'Ika South' => t('Ika South'),
+          'Isoko North' => t('Isoko North'),
+          'Isoko South' => t('Isoko South'),
+          'Ndokwa East' => t('Ndokwa East'),
+          'Ndokwa West' => t('Ndokwa West'),
+          'Okpe' => t('Okpe'),
+          'Oshimili' => t('Oshimili'),
+          'Oshimili North' => t('Oshimili North'),
+          'Patani' => t('Patani'),
+          'Sapele' => t('Sapele'),
+          'Udu' => t('Udu'),
+          'Ughelli North' => t('Ughelli North'),
+          'Ughelli South' => t('Ughelli South'),
+          'Ukwani' => t('Ukwani'),
+          'Uvwie' => t('Uvwie'),
+          'Warri Central' => t('Warri Central'),
+          'Warri North' => t('Warri North'),
+          'Warri South' => t('Warri South'),
+
+      );
+    }
+    if ($address['administrative_area'] == 'Ebonyi') {
+      $format['locality_block']['locality']['#options'] = array(
+          '' => t('-Choose an area-'),
+          'Abakaliki' => t('Abakaliki'),
+          'Afikpo North' => t('Afikpo North'),
+          'Afikpo South' => t('Afikpo South'),
+          'Ebonyi' => t('Ebonyi'),
+          'Ezza' => t('Ezza'),
+          'Ezza South' => t('Ezza South'),
+          'Ishielu' => t('Ishielu'),
+          'Ivo' => t('Ivo'),
+          'Ikwo' => t('Ikwo'),
+          'Ohaozara' => t('Ohaozara'),
+          'Ohaukwu' => t('Ohaukwu'),
+          'Onicha' => t('Onicha'),
+      );
+    }
+    if ($address['administrative_area'] == 'Edo') {
+      $format['locality_block']['locality']['#options'] = array(
+          '' => t('-Choose an area-'),
+          'Central' => t('Abakaliki'),
+          'Egor' => t('Afikpo North'),
+          'Esan Central' => t('Afikpo South'),
+          'Esan North-East' => t('Ebonyi'),
+          'Esan South-East' => t('Ezza'),
+          'Esan West' => t('Ezza South'),
+          'Etsako Central' => t('Ishielu'),
+          'Etsako Central' => t('Ivo'),
+          'Igueben' => t('Ikwo'),
+          'Oredo' => t('Ohaozara'),
+          'Orhionwon' => t('Ohaukwu'),
+          'Ovia South-East' => t('Onicha'),
+          'Ovia SouthWest' => t('Onicha'),
+      );
+    }
 
     // Other states to follow.
   }
