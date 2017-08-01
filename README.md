@@ -15,6 +15,6 @@ Administrative area is provided. Other states coming soon.
 I'm just a passionate maintainer, with :heart: by  @dapseen (dapseen[at]gmail.com)
 
 ## How you can help us
-Kindly download the plugin and check if your state and all your LGA are present,
+Kindly install the plugin and check if your state and all your LGA are present,
 it will help definitely Nigeria Drupal community.
  Thank you
